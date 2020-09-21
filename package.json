@@ -1,0 +1,39 @@
+{
+  "name": "react-slide-pane",
+  "private": true,
+  "author": "Dengju Deng <wj871287@gmail.com>",
+  "homepage": "https://react-slide-pane.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Turkyden/react-slide-pane.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "husky": ">=4",
+    "lerna": "^3.22.1",
+    "lint-staged": ">=10",
+    "prettier": "^1.15.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,md,json,html,css,scss,webmanifest}": "prettier --write"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "shoot": "lerna run shoot",
+    "start": "lerna run --parallel start",
+    "test": "lerna run test",
+    "test:coverage": "lerna run test:coverage"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
