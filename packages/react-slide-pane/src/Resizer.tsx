@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core'
 import React, { CSSProperties, MouseEvent, TouchEvent } from 'react'
 
 export const RESIZER_DEFAULT_CLASSNAME = 'Resizer'
@@ -9,6 +11,7 @@ export type ResizerProps = {
   onClick?: (event: MouseEvent) => void
   onDoubleClick?: (event: MouseEvent) => void
   onMouseDown: (event: MouseEvent) => void
+  onMouseUp: (event: MouseEvent) => void
   onTouchStart: (event: TouchEvent) => void
   onTouchEnd: (event: TouchEvent) => void
   split?: Split
@@ -21,6 +24,7 @@ export default function Resizer({
   onClick,
   onDoubleClick,
   onMouseDown,
+  onMouseUp,
   onTouchEnd,
   onTouchStart,
   resizerClassName = RESIZER_DEFAULT_CLASSNAME,
@@ -29,25 +33,29 @@ export default function Resizer({
 }: ResizerProps) {
   const classes = [resizerClassName, split, className]
 
-  const defaultStyle: CSSProperties = {
-    width: '11px',
-    margin: '0 -5px',
-    borderLeft: '5px solid rgba(255,255,255,0)',
-    borderRight: '5px solid rgba(255,255,255,0)',
-    cursor: 'col-resize',
-    background: '#000',
-    opacity: '0.2',
-    zIndex: 1,
-    backgroundClip: 'padding-box',
-    position: 'absolute'
-  }
+  const ResizerCSS = css`
+    height: 100%;
+    width: 11px;
+    margin: 0 -5px;
+    border-left: 5px solid rgba(255, 255, 255, 0);
+    border-right: 5px solid rgba(255, 255, 255, 0);
+    cursor: col-resize;
+    background: #000;
+    opacity: 0.2;
+    z-index: 1;
+    background-clip: padding-box;
+    position: absolute;
+    left: 200px;
+  `
 
   return (
     <span
       role="presentation"
       className={classes.join(' ')}
-      style={{ ...defaultStyle, ...style }}
-      onMouseDown={event => onMouseDown(event)}
+      css={ResizerCSS}
+      style={style}
+      onMouseDown={onMouseDown}
+      onMouseUp={onMouseUp}
       onTouchStart={event => {
         event.preventDefault()
         onTouchStart(event)

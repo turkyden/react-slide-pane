@@ -1,12 +1,29 @@
 # React Slide Pane
 
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 ```js
 import SlidePane from 'react-slide-pane'
 
-<SlidePane split="vertical">
-  <Pane initialSize="200px"><img src="https://jdc.jd.com/img/200x200?text=1" /></Pane>
-  <Pane><img src="https://jdc.jd.com/img/200x200?text=1" /></Pane>
-<SlidePane>
+ReactDOM.render(
+  <>
+    <SlidePane
+      initialWidth={600}
+      initialHeight={400}
+      split="vertical"
+      initialSize="200px"
+    >
+      <img src="https://jdc.jd.com/img/600x400?text=1" />
+      <img src="https://jdc.jd.com/img/600x400?text=2" />
+    </SlidePane>
+  </>,
+  mountNode
+)
 ```
 
-|
+## API
+
+|   Name   |     Type     |  Default   |                          Description                           |
+| :------: | :----------: | :--------: | :------------------------------------------------------------: |
+|  split   |    string    | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
+| children | ReactElement |  undefied  |                                                                |
