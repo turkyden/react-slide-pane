@@ -27,3 +27,11 @@ ReactDOM.render(
 | :------: | :-----------: | :--------: | :------------------------------------------------------------: |
 |  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
 | children | React.Element |  undefied  |                The children of slide pane coms                 |
+
+## Reference
+
+[react-split-pane](https://github.com/tomkp/react-split-pane)
+
+[react-component/slider](https://github.com/react-component/slider)
+
+[react-split-pane-v2](http://react-split-pane-v2.surge.sh/?SimpleExample)
