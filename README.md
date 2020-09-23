@@ -23,7 +23,7 @@ ReactDOM.render(
 
 ## API
 
-|   Name   |     Type     |  Default   |                          Description                           |
-| :------: | :----------: | :--------: | :------------------------------------------------------------: |
-|  split   |    string    | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
-| children | ReactElement |  undefied  |                                                                |
+|   Name   |     Type      |  Default   |                          Description                           |
+| :------: | :-----------: | :--------: | :------------------------------------------------------------: |
+|  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
+| children | React.Element |  undefied  |                The children of slide pane coms                 |
