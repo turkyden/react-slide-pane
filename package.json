@@ -1,6 +1,6 @@
 {
   "name": "react-slide-pane",
-  "private": true,
+  "private": false,
   "author": "Dengju Deng <wj871287@gmail.com>",
   "homepage": "https://react-slide-pane.com",
   "license": "MIT",
@@ -35,5 +35,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "version": "0.0.2"
 }
