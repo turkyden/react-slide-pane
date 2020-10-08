@@ -13,31 +13,37 @@ import { useState } from '@storybook/addons'
 storiesOf('SlidePane', module)
   .addDecorator(withKnobs)
   .add('default', () => (
-    <SlidePane>
+    <SlidePane width={600} height={400}>
       <img src="https://jdc.jd.com/img/600x400?text=1" />
       <img src="https://jdc.jd.com/img/600x400?text=2" />
     </SlidePane>
   ))
   .add('diff img', () => (
-    <SlidePane>
+    <SlidePane width={600} height={400}>
       <img src="https://picsum.photos/id/237/600/400" />
       <img src="https://picsum.photos/id/237/600/400?grayscale" />
     </SlidePane>
   ))
+  .add('diff img sm', () => (
+    <SlidePane width={300} height={300}>
+      <img src="https://picsum.photos/id/237/300/300" />
+      <img src="https://picsum.photos/id/237/300/300?grayscale" />
+    </SlidePane>
+  ))
   .add('initial(100)', () => (
-    <SlidePane initial={100}>
+    <SlidePane width={600} height={400} initial={100}>
       <img src="https://picsum.photos/id/237/600/400" />
       <img src="https://picsum.photos/id/237/600/400?grayscale" />
     </SlidePane>
   ))
   .add('initial(200px)', () => (
-    <SlidePane initial="200px">
+    <SlidePane width={600} height={400} initial="200px">
       <img src="https://picsum.photos/id/237/600/400" />
       <img src="https://picsum.photos/id/237/600/400?grayscale" />
     </SlidePane>
   ))
   .add('initial(50%)', () => (
-    <SlidePane initial="50%">
+    <SlidePane width={600} height={400} initial="50%">
       <img src="https://picsum.photos/id/237/600/400" />
       <img src="https://picsum.photos/id/237/600/400?grayscale" />
     </SlidePane>
@@ -53,14 +59,24 @@ storiesOf('SlidePane', module)
         alignItems: 'center'
       }}
     >
-      <SlidePane>
+      <SlidePane width={600} height={400}>
         <img src="https://picsum.photos/id/237/600/400" />
         <img src="https://picsum.photos/id/237/600/400?grayscale" />
       </SlidePane>
     </div>
   ))
+  .add('with inner block', () => (
+    <SlidePane width={600} height={400}>
+      <div
+        style={{ width: '400px', height: '400px', backgroundColor: 'red' }}
+      ></div>
+      <div
+        style={{ width: '400px', height: '400px', backgroundColor: 'blue' }}
+      ></div>
+    </SlidePane>
+  ))
   .add('split horizontal', () => (
-    <SlidePane split="horizontal">
+    <SlidePane width={600} height={400} split="horizontal">
       <img src="https://picsum.photos/id/237/600/400" />
       <img src="https://picsum.photos/id/237/600/400?grayscale" />
     </SlidePane>

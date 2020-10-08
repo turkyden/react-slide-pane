@@ -20,6 +20,8 @@ export type SlidePaneProps = {
   onResizerDoubleClick?: (e: MouseEvent) => void
   split?: Split
   initial?: Size
+  width: number
+  height: number
   children: Array<ReactElement>
   resizerStyle?: CSSProperties
 }
@@ -29,6 +31,8 @@ export default function SlidePane({
   onResizerDoubleClick,
   split = 'vertical',
   initial = 200,
+  width = 600,
+  height = 400,
   children,
   resizerStyle
 }: SlidePaneProps) {
@@ -38,15 +42,15 @@ export default function SlidePane({
   const rect = useRect(ref)
 
   const x = rect ? rect.x : 0
-  const width = rect ? rect.width : 600
-  const height = rect ? rect.height : 400
+  const w = rect ? rect.width : width
+  const h = rect ? rect.height : height
   let initialPosition: number
   if (typeof initial === 'number') {
     initialPosition = initial
   } else if (typeof initial === 'string' && initial.includes('px')) {
     initialPosition = Number(initial.split('px')[0])
   } else if (typeof initial === 'string' && initial.includes('%')) {
-    initialPosition = width * Number(initial.split('%')[0]) * 0.01
+    initialPosition = w * Number(initial.split('%')[0]) * 0.01
   } else {
     initialPosition = 200
   }
@@ -75,8 +79,8 @@ export default function SlidePane({
   const SlidePaneCSS = css`
     position: relative;
     overflow: hidden;
-    width: ${width}px;
-    height: ${height}px;
+    width: ${w}px;
+    height: ${h}px;
     user-select: none;
   `
 
@@ -86,7 +90,7 @@ export default function SlidePane({
 
   const PaneFrontCSS = css`
     position: absolute;
-    right: ${width - position}px;
+    right: ${w - position}px;
   `
 
   const PaneFrontBoxCSS = css`

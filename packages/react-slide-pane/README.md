@@ -8,7 +8,7 @@ import SlidePane from 'react-slide-pane'
 
 ReactDOM.render(
   <>
-    <SlidePane split="vertical" initial="200px">
+    <SlidePane width={600} height={400} split="vertical" initial="200px">
       <img src="https://jdc.jd.com/img/600x400?text=1" />
       <img src="https://jdc.jd.com/img/600x400?text=2" />
     </SlidePane>
@@ -21,6 +21,9 @@ ReactDOM.render(
 
 |   Name   |     Type      |  Default   |                          Description                           |
 | :------: | :-----------: | :--------: | :------------------------------------------------------------: |
+|  width   |    number     |   `600`    |                  The width of pane conmponent                  |
+|  height  |    number     |   `400`    |                 The height of pane conmponent                  |
+| initial  |    number     |   string   |                             `400`                              | The initial position of resizer |
 |  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
 | children | React.Element |  undefied  |                The children of slide pane coms                 |
 
