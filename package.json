@@ -1,6 +1,6 @@
 {
   "name": "react-slide-pane",
-  "private": false,
+  "private": true,
   "author": "Dengju Deng <wj871287@gmail.com>",
   "homepage": "https://react-slide-pane.com",
   "license": "MIT",
