@@ -4,7 +4,7 @@
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-[Storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
+[Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
 
 ## Usage
 
