@@ -2,6 +2,9 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
+
+## Usage
+
 [![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
 
 ```js
