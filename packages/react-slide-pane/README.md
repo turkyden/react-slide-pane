@@ -1,46 +1,33 @@
-# React ImageHover
+# React Slide Pane
 
-A react components
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
 
-封装鼠标经过/点击图层时，切换正反面的 UI 逻辑。
+```js
+import SlidePane from 'react-slide-pane'
 
-```html
-<figure class="imghvr-reveal-right">
-  <img src="https://jdc.jd.com/img/300x300" />
-  <figcaption>
-    <!-- Hover Content -->
-  </figcaption>
-</figure>
+ReactDOM.render(
+  <>
+    <SlidePane split="vertical" initial="200px">
+      <img src="https://jdc.jd.com/img/600x400?text=1" />
+      <img src="https://jdc.jd.com/img/600x400?text=2" />
+    </SlidePane>
+  </>,
+  mountNode
+)
 ```
 
-## Usage
+## API
 
-```tsx
-import { ImageHover } from 'react-imagehover'
-;<ImageHover>
-  <div>// your front layer content</div>
-  <div>// your back layer content</div>
-</ImageHover>
-```
+|   Name   |     Type      |  Default   |                          Description                           |
+| :------: | :-----------: | :--------: | :------------------------------------------------------------: |
+|  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
+| children | React.Element |  undefied  |                The children of slide pane coms                 |
 
-## Hook
+## Reference
 
-```tsx
-import { ImageHover, useImageHover } from 'react-imagehover'
+[react-split-pane](https://github.com/tomkp/react-split-pane)
 
-function App() {
-  const [frontProps, backProps] = useImageHover({
-    effect: 'reveal-right',
-    mode: 'hover',
-    duration: 0.35,
-    speed: 'fast'
-  })
+[react-component/slider](https://github.com/react-component/slider)
 
-  return (
-    <ImageHover.div>
-      <div {...frontProps}>// your front layer content</div>
-      <div {...backProps}>// your back layer content</div>
-    </ImageHover.div>
-  )
-}
-```
+[react-split-pane-v2](http://react-split-pane-v2.surge.sh/?SimpleExample)
