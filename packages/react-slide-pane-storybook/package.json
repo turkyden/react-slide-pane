@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "start": "start-storybook"
+    "start": "start-storybook",
+    "build": "build-storybook -o ./dist",
+    "deploy": "storybook-to-ghpages"
   },
   "devDependencies": {
     "@babel/core": "^7.11.0",
@@ -13,6 +15,7 @@
     "@storybook/preset-typescript": "^2.1.0",
     "@storybook/react": "^5.3.19",
     "@storybook/source-loader": "^5.3.19",
+    "@storybook/storybook-deployer": "^5.3.19",
     "@types/react": "^16.9.23",
     "@types/webpack": "^4.41.21",
     "babel-loader": "^8.1.0",

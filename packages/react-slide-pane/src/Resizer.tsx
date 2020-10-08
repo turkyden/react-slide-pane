@@ -35,7 +35,6 @@ export default function Resizer({
 
   const ResizerCSS = css`
     height: 100%;
-    width: 11px;
     margin: 0 -5px;
     border-left: 5px solid rgba(255, 255, 255, 0);
     border-right: 5px solid rgba(255, 255, 255, 0);
@@ -45,7 +44,6 @@ export default function Resizer({
     z-index: 1;
     background-clip: padding-box;
     position: absolute;
-    left: 200px;
   `
 
   return (
