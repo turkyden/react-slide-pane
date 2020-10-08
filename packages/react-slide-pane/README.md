@@ -2,6 +2,7 @@
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
+[![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
 
 ```js
 import SlidePane from 'react-slide-pane'
@@ -23,9 +24,9 @@ ReactDOM.render(
 | :------: | :-----------: | :--------: | :------------------------------------------------------------: |
 |  width   |    number     |   `600`    |                  The width of pane conmponent                  |
 |  height  |    number     |   `400`    |                 The height of pane conmponent                  |
-| initial  |    number     |   string   |                             `400`                              | The initial position of resizer |
+| initial  |    number     |   `200`    |                             `400`                              | The initial position of resizer |
 |  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
-| children | React.Element |  undefied  |                The children of slide pane coms                 |
+| children | React.Element | `undefied` |                The children of slide pane coms                 |
 
 ## Reference
 
