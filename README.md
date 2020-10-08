@@ -4,6 +4,8 @@
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
+[Storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
+
 ## Usage
 
 [![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
