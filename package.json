@@ -21,7 +21,6 @@
     "*.{js,ts,tsx,md,json,html,css,scss,webmanifest}": "prettier --write"
   },
   "scripts": {
-    "publish": "lerna publish",
     "prepublish": "yarn build",
     "build": "lerna run build",
     "shoot": "lerna run shoot",
@@ -37,5 +36,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  }
+  },
+  "version": "0.0.0"
 }

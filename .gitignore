@@ -24,3 +24,5 @@ resources/*_data
 resources/*.aup
 
 .cache
+
+build

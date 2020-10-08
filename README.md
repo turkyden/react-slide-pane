@@ -8,12 +8,7 @@ import SlidePane from 'react-slide-pane'
 
 ReactDOM.render(
   <>
-    <SlidePane
-      initialWidth={600}
-      initialHeight={400}
-      split="vertical"
-      initialSize="200px"
-    >
+    <SlidePane split="vertical" initial="200px">
       <img src="https://jdc.jd.com/img/600x400?text=1" />
       <img src="https://jdc.jd.com/img/600x400?text=2" />
     </SlidePane>
