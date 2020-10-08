@@ -21,7 +21,6 @@
     "*.{js,ts,tsx,md,json,html,css,scss,webmanifest}": "prettier --write"
   },
   "scripts": {
-    "prepublish": "set NODE_ENV=production && yarn build",
     "build": "lerna run build",
     "shoot": "lerna run shoot",
     "start": "lerna run --parallel start",
