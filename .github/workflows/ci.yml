@@ -15,5 +15,5 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: packages/react-slide-pane-storybook/dist
+        FOLDER: build
         BUILD_SCRIPT: npm install && npm run build

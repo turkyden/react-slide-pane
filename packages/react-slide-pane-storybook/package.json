@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "start": "start-storybook",
-    "build": "build-storybook -o ./dist",
+    "build": "build-storybook -o ../../build",
     "deploy": "storybook-to-ghpages"
   },
   "devDependencies": {
