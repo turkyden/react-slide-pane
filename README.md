@@ -4,7 +4,9 @@
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-Split-Pane React component, can be nested or split vertically or horizontally and diff image! [Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
+Split-Pane React component, can be nested or split vertically or horizontally and diff image!
+
+[Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
 
 ## Usage
 
