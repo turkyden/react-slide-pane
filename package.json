@@ -12,7 +12,6 @@
     "packages/*"
   ],
   "devDependencies": {
-    "husky": ">=4",
     "lerna": "^3.22.1",
     "lint-staged": ">=10",
     "prettier": "^1.15.3"
@@ -30,10 +29,5 @@
   "prettier": {
     "semi": false,
     "singleQuote": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
