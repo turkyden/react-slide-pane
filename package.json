@@ -12,6 +12,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "commitizen": "^4.2.1",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^5.0.0-alpha.6",
     "is-ci": "^2.0.0",
