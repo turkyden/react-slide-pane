@@ -12,6 +12,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^5.0.0-alpha.6",
     "is-ci": "^2.0.0",
     "lerna": "^3.22.1",
@@ -22,6 +23,7 @@
     "*.{js,ts,tsx,md,json,html,css,scss,webmanifest}": "prettier --write"
   },
   "scripts": {
+    "commit": "cz",
     "build": "lerna run build",
     "shoot": "lerna run shoot",
     "start": "lerna run --parallel start",
@@ -37,6 +39,11 @@
     "hooks": {
       "pre-commit": "npm run lint-staged",
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
