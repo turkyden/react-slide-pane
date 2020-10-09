@@ -28,7 +28,7 @@ ReactDOM.render(
 | :------: | :-----------: | :--------: | :------------------------------------------------------------: |
 |  width   |    number     |   `600`    |                  The width of pane conmponent                  |
 |  height  |    number     |   `400`    |                 The height of pane conmponent                  |
-| initial  |    number     |   `200`    |                             `400`                              | The initial position of resizer |
+| initial  |    number / string  |   `200`    | The initial position of resizer |
 |  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
 | children | React.Element | `undefied` |                The children of slide pane coms                 |
 

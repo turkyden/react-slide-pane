@@ -68,10 +68,10 @@ storiesOf('SlidePane', module)
   .add('with inner block', () => (
     <SlidePane width={600} height={400}>
       <div
-        style={{ width: '400px', height: '400px', backgroundColor: 'red' }}
+        style={{ width: '600px', height: '400px', backgroundColor: 'red' }}
       ></div>
       <div
-        style={{ width: '400px', height: '400px', backgroundColor: 'blue' }}
+        style={{ width: '600px', height: '400px', backgroundColor: 'blue' }}
       ></div>
     </SlidePane>
   ))
