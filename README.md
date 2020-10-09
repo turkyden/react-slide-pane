@@ -8,11 +8,10 @@ Split-Pane React component, can be nested or split vertically or horizontally an
 
 [Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
 
+[![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
 [![React Slide Pane Demo](./README.gif)](https://turkyden.github.io/react-slide-pane/)
 
 ## Usage
-
-[![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
 
 ```js
 import React from 'react'
