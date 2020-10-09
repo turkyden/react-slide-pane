@@ -12,6 +12,8 @@
     "packages/*"
   ],
   "devDependencies": {
+    "husky": "^5.0.0-alpha.6",
+    "is-ci": "^2.0.0",
     "lerna": "^3.22.1",
     "lint-staged": ">=10",
     "prettier": "^1.15.3"
@@ -24,7 +26,8 @@
     "shoot": "lerna run shoot",
     "start": "lerna run --parallel start",
     "test": "lerna run test",
-    "test:coverage": "lerna run test:coverage"
+    "test:coverage": "lerna run test:coverage",
+    "postinstall": "is-ci || husky install"
   },
   "prettier": {
     "semi": false,
