@@ -4,14 +4,13 @@
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-Split-Pane React component, can be nested or split vertically or horizontally and diff image!
+Split-Pane React component, can be nested or split vertically or horizontally and diff image! [Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
 
-[Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
-
-[![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
 [![React Slide Pane Demo](./README.gif)](https://turkyden.github.io/react-slide-pane/)
 
 ## Usage
+
+[![Edit ReactSlidePane](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/funny-liskov-z7dot?fontsize=14&hidenavigation=1&theme=dark)
 
 ```js
 import React from 'react'
