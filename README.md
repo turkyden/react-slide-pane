@@ -4,7 +4,7 @@
 [![Codepen Preview](https://img.shields.io/badge/codepen-preview-brightgreen.svg)](https://codepen.io/turkyden/pen/ExKOmqV)
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
-Split-Pane React component, can be nested or split vertically or horizontally and diff image!
+Split-Pane React component, can be nested or split vertically or horizontally and diff image! 
 
 [Preview in storybook &rarr;](https://turkyden.github.io/react-slide-pane/)
 
@@ -37,7 +37,7 @@ ReactDOM.render(
 |  width   |    number     |   `600`    |                  The width of pane conmponent                  |
 |  height  |    number     |   `400`    |                 The height of pane conmponent                  |
 | initial  |    number / string  |   `200`    | The initial position of resizer |
-|  split   |    string     | `vertical` | If split is equal to `vertical`, the resizer will be vertical. |
+|  split   |    string     | `vertical` | If split is equal to `horizontally`, the resizer will be horizontally. |
 | children | React.Element | `undefied` |                The children of slide pane coms                 |
 
 ## Reference
