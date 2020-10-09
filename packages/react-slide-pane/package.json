@@ -20,7 +20,6 @@
   "scripts": {
     "start": "rollup -c -w",
     "build": "rollup -c",
-    "prepublishOnly": "set NODE_ENV=production && npm run build",
     "test": "jest"
   },
   "dependencies": {
@@ -51,5 +50,5 @@
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.6"
   },
-  "gitHead": "cc17800410a0ce89c91b9a69bf2c79ef7360efe7"
+  "gitHead": "67bfa34c208142798b548737dcd3c53ac26b4e54"
 }
